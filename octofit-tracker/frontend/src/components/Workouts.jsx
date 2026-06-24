@@ -9,7 +9,7 @@ function Workouts() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        const response = await fetch(buildApiUrl('workouts'));
+        const response = await fetch(buildApiUrl('/api/workouts'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }

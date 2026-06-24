@@ -9,7 +9,7 @@ function Teams() {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const response = await fetch(buildApiUrl('teams'));
+        const response = await fetch(buildApiUrl('/api/teams'));
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
         }
