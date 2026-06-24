@@ -10,7 +10,7 @@ import workoutsRoutes from './routes/workouts';
 
 const app = express();
 
-const port = Number(process.env.PORT) || 8000;
+const port = 8000;
 const mongoUri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/octofit_db';
 const codespaceName = process.env.CODESPACE_NAME;
 const baseUrl = codespaceName
